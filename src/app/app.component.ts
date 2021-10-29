@@ -11,4 +11,8 @@ export class AppComponent  {
   value: number = 5000;
   a: number = 0.259;
   b: number = 1.3495;
+  locale: string = 'en';
+  constructor() {
+    this.locale= navigator.language;
+  }
 }
